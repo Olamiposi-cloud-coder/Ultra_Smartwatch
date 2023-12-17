@@ -501,7 +501,32 @@ button {
 
 /* Free gift section  */
 .gift {
+  margin-top: 40px;
   width: 324px;
   padding: 16px;
   border-radius: 16px;
+  background: #F5F5F5;
+}
+
+.gift h3 {
+  margin-bottom: 15px;
+  width: 290px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: linear-gradient(0deg, #171717, #171717),
+   linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.gift p {
+  width: 290px;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #766363;
 }
