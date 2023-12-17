@@ -18,6 +18,18 @@ span {
     color: #FF7101;
 }
 
+button {
+  margin-top: 30px;
+  padding: 15px 85px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #FFFFFF;
+  background: #FF7101;
+}
 /* Ads section starts */
 
 .ads {
@@ -261,26 +273,151 @@ span {
   }
   
 .about li {
-    margin-bottom: 15px; /* Adjust the spacing as needed */
-    display: flex; /* Align icon and text horizontally */
-    align-items: center; /* Center vertically within the list item */
+    margin-bottom: 15px; 
+    display: flex; 
+    align-items: center;
   }
   
 .about li img {
-    margin-right: 10px; /* Adjust the spacing between the icon and text */
+    margin-right: 10px; 
   }
   
   
-  .about span {
+.about span {
     color: #ff6f00;
   }
   
-  .about .prices {
+.prices {
     margin-top: 20px;
+    padding-left: 20px;
   }
   
-  .about p span {
-    font-weight: bold;
-    color: #ff6f00; 
-  }
+.prices p {
+    text-align: center;
+    width: 292px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    color: #171717;
+
+}
+
+.prices p:last-child {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: 0em;
+  color: #171717;
+}
+
+.prices .normal {
+  line-height: 35px;
+  letter-spacing: 0em;
+  color: #171717;
+  text-decoration: line-through;
+}
+
+/* product-features section */
+.product-features {
+  margin-top: 40px;
+}
+
+.product-features .features-btn { 
+   font-size: 16px;
+   font-weight: 900;
+   line-height: 19px;
+   letter-spacing: 0em;
+   color: #FFFFFF;
+   background-color: #171717;
+   padding: 10px 20px;
+   border-radius: 20px;
+   margin-left: 70px;
+}
+
+.product-features .product-img {
+  padding: 0 12px;
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove extra space beneath the image */
+  margin: 30px auto; /* Center the image horizontally */
   
+}
+
+.product-features .features {
+  margin: 15px 0 20px 0;
+  color: #766363;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 20px;
+}
+.product-features .features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin-bottom: 10px; /* Adjust the spacing as needed */
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Center vertically within the list item */
+}
+
+.features img {
+  margin-right: 10px; /* Adjust the spacing between the icon and text */
+}
+
+.features p {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+
+/* warranty-section starts */
+.warranty-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 324px;
+  height: 665px;
+  padding: 16px;
+  border-radius: 16px;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  background: #1D1F1A;
+  color: #FFFFFF;
+}
+
+.warranty-section img {
+  max-width: 100%;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.warranty-section h4 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.warranty-section p {
+  width: 290px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 8px 0;
+}
