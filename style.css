@@ -572,9 +572,9 @@ button {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
-  color: linear-gradient(0deg, #171717, #171717),
-  linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  ;
+  background: linear-gradient(0deg, #171717, #171717),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  color: #fff;
 }
 
 .option-one {
@@ -587,32 +587,24 @@ button {
   width: 324px;
   border-radius: 16px;
   background: linear-gradient(0deg, #171717, #171717),
-  linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
 
-.option-one button:first-child {
+.option-one button {
   margin-bottom: 20px;
-  width: 128px;
-  height: 30px;
-  padding: 4px 16px 4px 16px;
-  border-radius: 100px;
-  gap: 10px;
+  width: 288px; /* Set the width to match the form inputs */
+  height: 50px;
+  padding: 12px 16px;
+  border-radius: 8px;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   color: #171717;
-  background: #FFFFFF;
+  background: #FF6F00;
 }
 
-.option-one button:last-child {
-  width: 288px;
-  height: 50px;
-  padding: 12px 16px 12px 16px;
-  border-radius: 8px;
-  gap: 10px;
-}
 .option-one p {
   width: 210px;
   font-size: 18px;
@@ -632,16 +624,32 @@ button {
 
 input,
 select {
-  width: 100%;
+  width: 288px; /* Set the width to match the button */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  background: none;
+  color: #FFFFFF;
+  height: 50px;
+}
+
+select {
+  appearance: none; 
+  background: none; 
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input::placeholder {
+  color: #fff; /* Set the placeholder color to white */
 }
 
 input[type="text"],
 input[type="number"] {
-  height: 40px;
+  height: 50px; /* Adjust the height to match the button */
 }
 
 button,
