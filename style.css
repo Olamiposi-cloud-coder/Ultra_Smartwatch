@@ -6,6 +6,7 @@
 }
 
 body {
+  margin: 0 auto;
     font-family: 'Lato', sans-serif;
     width: 360px;
     height: 100vh;
