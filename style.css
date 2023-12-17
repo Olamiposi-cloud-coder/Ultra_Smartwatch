@@ -572,9 +572,8 @@ button {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
-  background: linear-gradient(0deg, #171717, #171717),
+  color: linear-gradient(0deg, #171717, #171717),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  color: #fff;
 }
 
 .option-one {
@@ -590,7 +589,23 @@ button {
     linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
 
-.option-one button {
+.option-one button:first-child {
+  margin-bottom: 20px;
+  width: 128px;
+  height: 30px;
+  padding: 4px 16px 4px 16px;
+  border-radius: 100px;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #171717;
+  background: #FFFFFF;
+}
+
+.option-one button:last-child {
   margin-bottom: 20px;
   width: 288px; /* Set the width to match the form inputs */
   height: 50px;
@@ -601,7 +616,7 @@ button {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
-  color: #171717;
+  color: #FFFFFF;
   background: #FF6F00;
 }
 
@@ -632,6 +647,7 @@ select {
   background: none;
   color: #FFFFFF;
   height: 50px;
+  margin-bottom: 10px;
 }
 
 select {
