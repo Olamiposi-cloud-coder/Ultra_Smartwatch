@@ -58,7 +58,7 @@ button {
     width: 100%;
     /* max-width: 360px; */
     margin: 0;
-    padding: 20px;
+    padding: 10px 20px;
     background: #171717;
     border: none;
     display: flex;
