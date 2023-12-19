@@ -18,7 +18,7 @@
             <p>
                 Ultra
             </p>
-            <button>
+            <button class="placeOrderButton">
                 PLACE MY ORDER
             </button>
         </nav>
@@ -73,7 +73,7 @@
                 <img src="./Images/Images/image 32.png" alt="">
             </div>
 
-            <button>
+            <button class="placeOrderButton">
                 PLACE MY ORDER
             </button>
         </div>
@@ -177,7 +177,7 @@
             </p>
         </div>
 
-        <button >
+        <button class="placeOrderButton">
             PLACE MY ORDER
         </button>
     </section>
@@ -290,19 +290,27 @@
             <button>OPTION 1</button>
             <p>Use the form below to place your order</p>
 
-            <form>
+            <form id="orderForm">
                 <input type="text" name="text" id="text" placeholder="Full Name">
                 <input type="number" name="number" id="number" placeholder="Active Phone Number">
                 <input type="text" name="location" id="location" placeholder="State">
                 <input type="text" name="address" id="address" placeholder="Delivery Address">
                 <select name="quantity" id="quantity">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                    <option value="1">
+                        1 Piece ₦35,000
+                    </option>
+                    <option value="2">
+                        1 Piece ₦70,000 <br>
+                        (Free Headset Inclusive)
+                    </option>
+                    <option value="3">
+                        3 Pieces ₦35,000 <br>
+                        (Free Apple Aripod pro Inclusive)
+                    </option>
                 </select>
             </form>
 
-            <button class="order-button">
+            <button class="order-button" id="submitOrderButton">
                 YES! PLACE MY ORDER
             </button>
         </div>
@@ -315,7 +323,7 @@
                 Place your order via whatsapp using the button below
             </p>
 
-            <button>
+            <button id="whatsappButton">
                 <img src="./Images/Images/whatsapp.png" alt="">
                 PLACE ORDER VIA WHATSAPP
             </button>
@@ -377,7 +385,7 @@
             </h3>
         </div>
 
-        <button>PLACE MY ORDER</button>
+        <button class="placeOrderButton">PLACE MY ORDER</button>
     </section>
 
     <footer>
