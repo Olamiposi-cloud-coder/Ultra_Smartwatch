@@ -182,7 +182,8 @@ button {
   }
 
 .showcase-two-section h3 {
-    width: 324px; 
+    width: 100%;
+    max-width: 324px; 
     font-size: 32px;
     font-weight: 900;
     line-height: 38px;
@@ -217,7 +218,7 @@ button {
   }
 
 .showcase-two-section img {
-    margin-right: 10px; 
+    margin: 0 10px 0 15px; 
   }
 
  .showcase-two-section .des-images {
