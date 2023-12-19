@@ -76,6 +76,10 @@ button {
     align-items: center;
 }
 
+.showcase-section nav img {
+  margin-top: 10px;
+}
+
 .showcase-section nav p {
     color: #FFFFFF;
     font-weight: 700;
@@ -110,7 +114,7 @@ button {
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0em;
-    color: #FFFFFF;
+    color: #A4A4A4 ;
     margin-bottom: 10px;
 }
 
