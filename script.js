@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const placeOrderButtons = document.querySelectorAll('.order-options button');
+    const placeOrderButtons = document.querySelectorAll('.placeOrderButton button');
     const orderForm = document.getElementById("orderForm");
     const submitOrderButton = document.getElementById("submitOrderButton");
     const whatsappButton = document.getElementById("whatsappButton");
@@ -58,3 +58,22 @@ document.addEventListener("DOMContentLoaded", function () {
         return true;
     }
 });
+
+let accordance = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < accordance.length; i++) {
+  accordance[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
