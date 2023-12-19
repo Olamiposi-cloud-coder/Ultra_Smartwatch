@@ -162,7 +162,7 @@ button {
 
 /* showcase-two-section starts */
 .showcase-two-section {
-    padding: 10px 15px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,6 +188,7 @@ button {
     font-weight: 900;
     line-height: 38px;
     letter-spacing: 0em;
+    text-align: start;
     background: linear-gradient(276.54deg, #FF6F00 21.13%, #171717 138.74%);
     background-clip: text;
     -webkit-background-clip: text; 
