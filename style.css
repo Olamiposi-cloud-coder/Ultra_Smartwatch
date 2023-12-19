@@ -84,7 +84,7 @@ button {
 
 .showcase-section nav button {
     padding: 10px;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
     background-color: #FF7101;
     color: #FFFFFF;
     font-family: Lato;
@@ -97,11 +97,11 @@ button {
 }
 
 .showcase {
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .showcase button {
-    padding: 10px 16px;
+    padding: 2px 8px;
     border-radius: 100px;
     border: 1px solid #A4A4A4;
     background-color: #171717;
@@ -126,7 +126,7 @@ button {
 .showcase h1 {
     width: 300px;
     height: 171px;
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 900;
     line-height: 57px;
     letter-spacing: 0em;
