@@ -264,30 +264,19 @@ button {
     width: 100%;
     max-width: 364px;
     margin: 0 auto 20px auto;
-    background-color: #171717; 
+    background-color: #171717;
     background-image: url('./Images/Images/W6 1.png');
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    color: #FFFFFF; 
-    padding: 20px; 
-    /* margin: 0 10px; */
-    box-sizing: border-box; 
+    color: #FFFFFF;
+    padding: 30px 20px;
+    box-sizing: border-box;
     border-radius: 20px;
     position: relative;
-  }
+    overflow: hidden; /* Ensure child elements don't overflow */
+}
 
-  .about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #171717CC;
-    border-radius: 20px;
-  }
-  
-  .about h3 {
+.about h3 {
     margin: 0 0 20px 0;
     width: 260px;
     height: 114px;
@@ -296,27 +285,27 @@ button {
     line-height: 38px;
     letter-spacing: 0em;
     color: #FFFFFF;
-  }
+}
 
 .about ul {
     list-style: none;
     padding: 0;
-  }
-  
+}
+
 .about li {
-    margin-bottom: 15px; 
-    display: flex; 
+    margin-bottom: 15px;
+    display: flex;
     align-items: center;
-  }
-  
+}
+
 .about li img {
-    margin-right: 10px; 
-  }
-  
-  
+    margin-right: 10px;
+}
+
 .about span {
     color: #ff6f00;
-  }
+}
+
   
 .prices {
     width: 100%;
@@ -882,19 +871,20 @@ input[type="submit"] {
 
 .accordion {
 
-  background-color: #171717;
+  /* background-color: #171717; */
   color: #FFFFFF;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   padding: 18px;
   width: 100%;
+  max-width: 384px;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active, .accordion:hover {
   background-color: #ccc;
 }
@@ -904,17 +894,25 @@ input[type="submit"] {
   width: 100%;
   max-width: 364px;
   padding: 0 18px;
-  background-color: #1D1F1A;
+  /* background-color: #1D1F1A; */
   display: none;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   margin-bottom: 20px;
 }
 
+.panel p {
+  width: 300px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
-  color: #777;
+  /* color: #777; */
   float: right;
   margin-left: 5px;
 }
@@ -931,7 +929,7 @@ footer {
   align-items: center;
   margin: 20px 0 0 0;
   width: 100%;
-  max-width: 600px;
+  min-width: 364px;
   background: linear-gradient(0deg, #171717, #171717),
   linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   color: #FFFFFF;
@@ -965,4 +963,86 @@ footer .lit {
   flex-direction: row;
   align-items: center;
   justify-content: space-between; 
+}
+
+/* Default styles for all screen sizes */
+
+/* Your existing CSS code */
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 100%;
+    padding: 0 10px; /* Adjust as needed */
+  }
+
+  .showcase-section h1 {
+    font-size: 40px;
+  }
+
+  .showcase h1 {
+    font-size: 40px;
+  }
+
+  .showcase-section nav p {
+    font-size: 24px;
+  }
+
+  .showcase-section nav button {
+    font-size: 14px;
+  }
+
+  .product-features .features-btn {
+    font-size: 14px;
+  }
+
+  /* Add more specific styles for smaller screens as needed */
+}
+
+/* Media query for screens between 601px and 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .showcase-section h1 {
+    font-size: 45px;
+  }
+
+  .showcase h1 {
+    font-size: 45px;
+  }
+
+  .showcase-section nav p {
+    font-size: 26px;
+  }
+
+  .showcase-section nav button {
+    font-size: 16px;
+  }
+
+  .product-features .features-btn {
+    font-size: 16px;
+  }
+  /* Adjust styles for medium-sized screens */
+}
+
+/* Media query for screens larger than 901px */
+@media screen and (min-width: 901px) {
+  .showcase-section h1 {
+    font-size: 50px;
+  }
+
+  .showcase h1 {
+    font-size: 50px;
+  }
+
+  .showcase-section nav p {
+    font-size: 30px;
+  }
+
+  .showcase-section nav button {
+    font-size: 18px;
+  }
+
+  .product-features .features-btn {
+    font-size: 18px;
+  }
+  /* Adjust styles for larger screens */
 }
