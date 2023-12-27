@@ -7,13 +7,13 @@
 
 body {
   margin: 0 auto;
+  padding: 0;
   font-family: 'Lato', sans-serif;
-  width: 100%;
-  max-width: 600px;
-  box-sizing: border-box;
   background: #FFFFFF;
-  /* padding: 0 10px; */
+  width: 100%;
+  max-width: 400px;
 }
+
 
 span {
     color: #FF7101;
@@ -57,13 +57,13 @@ button {
 .showcase-section {
     width: 100%;
     max-width: 600px;
-    margin: 0;
-    padding: 5px 20px 30px 20px;
+    margin: 0 auto;
+    padding: 5px 25px 30px 25px;
     background: #171717;
     border: none;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    /* align-items: stretch; */
     text-align: start;
     box-sizing: border-box;
 }
@@ -264,25 +264,39 @@ button {
     width: 100%;
     max-width: 324px;
     margin: 0 auto 20px auto;
-    background-color: #171717;
-    background-image: url('./Images/Images/W6 1.png');
-    background-size: cover;
-    background-position: center;
     color: #FFFFFF;
     padding: 30px 20px;
     box-sizing: border-box;
     border-radius: 20px;
-  }
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background */
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./Images/Images/W6%201.png') center/cover no-repeat;
+    opacity: 0.1;
+}
+
 
 .about h3 {
-    margin: 0 0 20px 0;
-    width: 260px;
-    height: 114px;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38px;
-    letter-spacing: 0em;
-    color: #FFFFFF;
+  margin: 0 0 20px 0;
+  width: 260px;
+  height: 114px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  color: #FFFFFF; /* Update this color to a contrasting color */
+}
+
+.about span {
+  color: #ff6f00; /* Update this color to a contrasting color */
 }
 
 .about ul {
@@ -299,11 +313,6 @@ button {
 .about li img {
     margin-right: 10px;
 }
-
-.about span {
-    color: #ff6f00;
-}
-
   
 .prices {
     width: 100%;
@@ -341,7 +350,10 @@ button {
 
 /* product-features section */
 .product-features {
+  width: 100%;
+  max-width: 360px;
   margin-top: 20px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -465,7 +477,8 @@ button {
   justify-content: center;
   align-items: center;
   margin: 50px auto;
-  padding: 16px;
+  text-align: center;
+  padding: 30px;
   border-radius: 16px;
   gap: 10px;
   background: #F5F5F5;
@@ -515,6 +528,8 @@ button {
   padding: 16px;
   border-radius: 16px;
   background: #F5F5F5;
+  text-align: center;
+  padding: 50px;
 }
 
 .how-to-order h3 {
@@ -546,9 +561,10 @@ button {
   margin: 40px auto;
   width: 100%;
   max-width: 364px;
-  padding: 16px;
+  padding: 30px;
   border-radius: 16px;
   background: #F5F5F5;
+  text-align: center;
 }
 
 .gift h3 {
